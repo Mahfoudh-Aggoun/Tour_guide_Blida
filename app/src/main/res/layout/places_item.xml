@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_frame"
+    android:layout_width="match_parent"
+    android:layout_height="220dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:paddingRight="20dp"
+    android:paddingLeft="20dp"
+   >
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:elevation="10dp"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="20dp"
+    android:layout_centerHorizontal="true"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+
+        <ImageView
+            android:id="@+id/place_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/place_ettoute_gv" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="learn more"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:linksClickable="true"/>
+
+        <TextView
+            android:id="@+id/place_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="120dp"
+            android:text="PLACE NAME"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/place_name"
+            android:layout_alignLeft="@+id/place_name"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/button"
+            android:backgroundTint="#30000000"
+            android:gravity="center_horizontal"
+            android:paddingLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:paddingRight="5dp">
+
+            <TextView
+                android:id="@+id/place_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="PLACE TYPE"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
+</RelativeLayout>
